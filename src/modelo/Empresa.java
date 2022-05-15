@@ -7,22 +7,23 @@ import java.util.List;
 public class Empresa {
 	private String nome;
 	private String cnpj;
-	private List<Funcionario> funcinarios;
+	private List<Funcionario> funcionarios;
 	
 	public Empresa(String nome, String cnpj) {
 		this.cnpj = cnpj;
 		this.nome = nome;
-		this.funcinarios = new ArrayList<Funcionario>();
+		this.funcionarios = new ArrayList<Funcionario>();
 	}
 	
 	public void adicionaFuncionario(Funcionario pFuncionario) {
 		
-			this.funcinarios.add(pFuncionario);
+			this.funcionarios.add(pFuncionario);
 		
 	}
 	
 	public List<Funcionario> getFuncionarios(){
-		return this.funcinarios;
+		//return this.funcinarios;
+		return funcionarios;
 	}
 	
 	public String getNome() {
